@@ -109,10 +109,13 @@ public class MyArrayList<T> implements Iterable<T> {
 
     /**
      * This class creates an iterator for the ArrayList class.
+     * If the static keyword is used it makes this a nested class. Without the static keyword,
+     * this is an inner class.
      */
-    private class ArrayListIterator implements Iterator<T> {
+    private  class ArrayListIterator implements Iterator<T> {
 
         private int current = 0;
+       
 
         @Override
         public boolean hasNext() {
